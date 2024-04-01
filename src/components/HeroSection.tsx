@@ -16,7 +16,7 @@ function HomeSection() {
             <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
               Bring your own{" "}
               <span className="text-primary-500 dark:text-primary-500">
-                language model.
+                randomized algorithm.
               </span>
             </h1>
             <p className="mt-8 text-gray-700 dark:text-gray-300">
@@ -27,7 +27,7 @@ function HomeSection() {
             </p>
             <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
               <a
-                href="/"
+                href="/login"
                 className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
               >
                 <span className="relative text-base font-semibold text-white">

@@ -24,7 +24,7 @@ function Header() {
                   <div className="h-6 w-2 bg-primary-500"></div>
                 </div>
                 <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  byollm
+                  randalgofy
                 </span>
               </a>
               <div className="relative flex items-center lg:hidden max-h-10">
