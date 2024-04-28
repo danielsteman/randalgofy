@@ -1,7 +1,5 @@
 "use client";
-import { signIn } from "next-auth/react";
 import { BsSpotify } from "react-icons/bs";
-import { SiSpotify } from "react-icons/si";
 
 const Login = async () => {
   return (
