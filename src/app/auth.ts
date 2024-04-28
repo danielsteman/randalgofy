@@ -11,6 +11,7 @@ if (
 }
 
 export const authOptions: NextAuthOptions = {
+  secret: process.env.NEXTAUTH_SECRET,
   providers: [
     SpotifyProvider({
       clientId: process.env.SPOTIFY_CLIENT_ID as string,
@@ -18,7 +19,3 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
 };
-
-const handler = NextAuth(authOptions);
-
-export { handler as GET, handler as POST };
