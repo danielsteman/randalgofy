@@ -1,4 +1,5 @@
 import Container from "./Container";
+import Logo from "./Logo";
 
 function Header() {
   return (
@@ -19,13 +20,7 @@ function Header() {
                 aria-label="logo"
                 className="flex space-x-2 items-center"
               >
-                <div aria-hidden="true" className="flex space-x-1">
-                  <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
-                  <div className="h-6 w-2 bg-primary-500"></div>
-                </div>
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  randalgofy
-                </span>
+                <Logo />
               </a>
               <div className="relative flex items-center lg:hidden max-h-10">
                 <label
