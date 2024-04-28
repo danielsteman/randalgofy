@@ -2,8 +2,15 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NextAuthProvider from "./providers";
+import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const meslo = localFont({
+  src: "./MesloLGS_NF_Regular.ttf",
+  display: "swap",
+  variable: "--font-meslo",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${inter.className} ${meslo.variable}`}>
+      <body>
         <NextAuthProvider>{children}</NextAuthProvider>
       </body>
     </html>

@@ -3,7 +3,11 @@ import type { Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        meslo: ["var(--font-meslo)"],
+      },
+    },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
