@@ -8,6 +8,7 @@ export default {
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
+      spotify: "#1DB954",
       primary: {
         50: "#00564c",
         100: "#004c42",

@@ -1,16 +1,19 @@
 "use client";
 import { signIn } from "next-auth/react";
+import { BsSpotify } from "react-icons/bs";
+import { SiSpotify } from "react-icons/si";
 
 const Login = async () => {
   return (
     <div className="flex h-screen">
       <div className="m-auto text-center bg-stone-900 p-8 rounded-lg">
-        <h3 className="text-2xl mb-8">Login to your account</h3>
+        <h3 className="text-xl mb-8">Login to your account</h3>
         <button
-          className="bg-stone-800 text-white rounder-md py-2 px-4"
-          onClick={() => signIn("spotify", { callbackUrl: "/" })}
+          type="button"
+          className="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2"
         >
-          Sign in with Spotify
+          <BsSpotify color="#1DB954" fontSize={20} />
+          &nbsp;&nbsp;Sign in with Spotify
         </button>
       </div>
     </div>
